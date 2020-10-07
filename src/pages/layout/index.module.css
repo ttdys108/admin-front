@@ -1,0 +1,32 @@
+.logo{
+    height: 64px;
+    line-height: 64px;
+    padding-left: 20px;
+    background-color: #3c8dbc;
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.logo span{
+    font-weight: 600;
+    color: white;
+}
+.header{
+    box-shadow: 1px 2px 4px rgba(0, 21, 41, 0.2);
+    background-color: #3c8dbc;
+    padding: 0 10px;
+    color: white;
+}
+.menuBtn{
+    font-size: 25px;
+}
+.menuBtn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.menuBtn:active{
+    font-size: 24px;
+}
+
