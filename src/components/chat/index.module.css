@@ -1,0 +1,72 @@
+.container{
+    position: relative;
+    padding: 5px;
+    background-color: #f0f2f5;
+}
+.msgWrapLeft{
+    padding: 5px;
+    position: relative;
+    left: 0;
+    clear: both;
+}
+.msgWrapRight{
+    padding: 5px;
+    position: relative;
+    right: 0;
+    clear: both;
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    vertical-align: top;
+    display: inline-block;
+}
+.avatarRight{
+    width: 40px;
+    height: 40px;
+    vertical-align: top;
+    display: inline-block;
+    float: right;
+}
+.msgInfo{
+    display: block;
+    color: #ccc;
+}
+.msgInfoRight{
+    display: block;
+    color: #ccc;
+    text-align: right;
+}
+.msgLeft{
+    margin: -5px 0 0 10px;
+    display: inline-block;
+    max-width: 70%;
+}
+.msgRight{
+    margin: -5px 10px 0 0;
+    display: inline-block;
+    max-width: 70%;
+    float: right;
+}
+.textLeft{
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+.textRight{
+    background-color: rgb(89 230 81);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+.messageBox{
+    overflow-y: scroll;
+    margin-bottom: 50px;
+}
+.messageBox::-webkit-scrollbar {
+    display: none;
+}
+.sendBox{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+}

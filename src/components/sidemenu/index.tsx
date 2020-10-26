@@ -1,5 +1,6 @@
 import React, {ReactElement} from "react";
 import {Menu} from "antd";
+import {Link} from 'react-router-dom';
 
 const {SubMenu} = Menu;
 
@@ -25,7 +26,9 @@ const menuitem = (menu: MenuData) => {
         </SubMenu>
         :
         <Menu.Item key={menu.key}>
-            {label(menu)}
+            <Link to={menu.route!}>
+                {label(menu)}
+            </Link>
         </Menu.Item>
 }
 

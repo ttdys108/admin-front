@@ -1,0 +1,12 @@
+.wrapper{
+    padding: 5px 0;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    background: white;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px #ccc;
+}

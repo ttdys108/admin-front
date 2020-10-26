@@ -4,6 +4,7 @@ import Login from "../pages/login";
 import AuthRouter from "./AuthRouter";
 import AppLayout from "../pages/layout";
 import Home from "../pages/home";
+import MessageChat from "../pages/message";
 
 
 const AppRouter = () => {
@@ -20,7 +21,9 @@ const AppRouter = () => {
                         <Route path={'/'} exact>
                             <Home />
                         </Route>
-
+                        <Route path={'/message'}>
+                            <MessageChat/>
+                        </Route>
                     </AppLayout>
                 </AuthRouter>
             </Switch>

@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 import {Layout, Menu, Row, Col, Button, Drawer, Tabs} from "antd";
 import style from "./index.module.css";
-import {HomeOutlined, UserOutlined, SettingOutlined, WindowsOutlined} from "@ant-design/icons";
+import {HomeOutlined, UserOutlined, SettingOutlined, WindowsOutlined, MessageOutlined} from "@ant-design/icons";
 import SideMenu, {MenuData} from "../../components/sidemenu";
 import {isXScreen, screenWidth} from "../../utils/common";
 import ResizeObserver from 'rc-resize-observer';
+import FixedMenuBar from "../../components/fixedmenubar";
 
 const {Content, Header, Sider} = Layout;
 const { TabPane } = Tabs;
@@ -15,6 +16,12 @@ const menus: MenuData[] = [
         name: '首页',
         route: '/',
         icon: <HomeOutlined />
+    },
+    {
+        key: 'message',
+        name: '消息',
+        route: '/message',
+        icon: <MessageOutlined />
     },
     {
         key: 'user',
@@ -97,14 +104,10 @@ const AppLayout: React.FC = ({children}) => {
                         </div>
                     </Header>
                     <Content>
-                        <Tabs renderTabBar={renderTabBar} type={'editable-card'} hideAdd tabBarGutter={0}>
-                           <TabPane tab={'系统设置'} key={'1'}>
-                               系统设置
-                           </TabPane>
-                            <TabPane tab={'用户设置'} key={'2'}>
-                                用户设置
-                            </TabPane>
-                        </Tabs>
+                        <div>
+                            {children}
+                        </div>
+                        <FixedMenuBar/>
                     </Content>
                 </Layout>
             </Layout>
